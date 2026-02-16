@@ -69,6 +69,7 @@ def main():
         pygame.quit()
         sys.exit()
     else:
+        print("Press h for help")
         # Initialize game object
         game = Game(S_WIDTH, S_HEIGHT, P_WIDTH, P_HEIGHT, TILESIZE, WHITE)        
         # Load last saved game if it exists

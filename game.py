@@ -162,6 +162,16 @@ class Game():
                         self.player.use_key(self.tiles)
                     elif event.key == pygame.K_i:
                         print(self.player.get_inventory())
+                    elif event.key == pygame.K_h:
+                        print("Press l for load save")
+                        print("Press q for quit")
+                        print("Press g to get item")
+                        print("Press u to use item")
+                        print("Press i to list inventory")
+                    elif event.key == pygame.K_q:
+                        print("Quitting game. Goodbye!")
+                        pygame.quit()
+                        sys.exit()
 
             # Drawing
             self.screen.fill(self.background)            
